@@ -7,15 +7,15 @@ n=input("do you want to have numbers ? y/n")
 em=input("do you want to have emogies ? y/n")
 
 ToInclude=""
-if Capitals=="y":
+if Capitals=="y" or Capitals=="Y":
     ToInclude+="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-if Small=="y":
+if Small=="y" or Small=="Y":
     ToInclude+="abcdefijklmnopqrstuvwxyz"
-if special=="y":
+if special=="y" or special=="Y":
     ToInclude+="!@#$%^&*()\'\"}{[]_-+=?><:"  
-if n=="y":
+if n=="y" or n=="Y":
     ToInclude+="1234567890" 
-if em=="y":
+if em=="y" or em=="Y":
     ToInclude+="😀😃👑😄🎓😁😆👒🧢😅😂🎩🤣"
 for password in range(upto):
     password="".join(random.choice(ToInclude))    
