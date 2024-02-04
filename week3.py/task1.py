@@ -1,5 +1,5 @@
-n=input("enter value of n")
-r=input("enter value of r")
+n=int(input("enter value of n"))
+r=int(input("enter value of r"))
 def per (n,r):
     nfact=1
     rfact=1
