@@ -1,5 +1,5 @@
-a=int(input("enter a number"))
-b=int(input("enter a number"))
+a=int(input("enter first number"))
+b=int(input("enter 2nd number"))
 larger= lambda a,b:max(a,b)
 
 def table (larger=lambda a,b:max(a,b)):
