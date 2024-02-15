@@ -1,10 +1,11 @@
 from tkinter import *
 root=Tk()
 
+root.iconbitmap('ECAT_app.py/n.ico')
 root.title("Calculator")
-e=Entry(root, width=35, borderwidth=5)
+e=Entry(root, width=35, borderwidth=5,background="white")
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
-root.configure(background="light blue")
+root.configure(background="whiteN")
 
 def button_click(number):
     current=e.get()
@@ -62,23 +63,23 @@ def button_divide():
 
 #make buttons
 
-button1=Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
-button2=Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))    
-button3=Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3))
-button4=Button(root, text="4", padx=40, pady=20, command=lambda: button_click(4))
-button5=Button(root, text="5", padx=40, pady=20, command=lambda: button_click(5))
-button6=Button(root, text="6", padx=40, pady=20, command=lambda: button_click(6))
-button7=Button(root, text="7", padx=40, pady=20, command=lambda: button_click(7))
-button8=Button(root, text="8", padx=40, pady=20, command=lambda: button_click(8))
-button9=Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
-button0=Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0))
-button_add=Button(root, text="+", padx=40, pady=20, command=button_add)
-button_equal=Button(root, text="=", padx=91, pady=20, command=button_equal)
-button_clear=Button(root, text="Clear", padx=79, pady=20, command=button_clear)
+button1=Button(root, text="1", padx=30, pady=20, command=lambda: button_click(1))
+button2=Button(root, text="2", padx=30, pady=20, command=lambda: button_click(2))    
+button3=Button(root, text="3", padx=30, pady=20, command=lambda: button_click(3))
+button4=Button(root, text="4", padx=30, pady=20, command=lambda: button_click(4))
+button5=Button(root, text="5", padx=30, pady=20, command=lambda: button_click(5))
+button6=Button(root, text="6", padx=30, pady=20, command=lambda: button_click(6))
+button7=Button(root, text="7", padx=30, pady=20, command=lambda: button_click(7))
+button8=Button(root, text="8", padx=30, pady=20, command=lambda: button_click(8))
+button9=Button(root, text="9", padx=30, pady=20, command=lambda: button_click(9))
+button0=Button(root, text="0", padx=30, pady=20, command=lambda: button_click(0))
+button_add=Button(root, text="+", padx=30, pady=20, command=button_add)
+button_equal=Button(root, text="=", padx=68, pady=20, command=button_equal)
+button_clear=Button(root, text="Clear", padx=58, pady=20, command=button_clear)
 
-button_subtract=Button(root, text="-", padx=41, pady=20, command=button_subtract)
-button_multiply=Button(root, text="*", padx=40, pady=20, command=button_multiply)
-button_divide=Button(root, text="/", padx=41, pady=20, command=button_divide)
+button_subtract=Button(root, text="-", padx=30, pady=20, command=button_subtract)
+button_multiply=Button(root, text="*", padx=30, pady=20, command=button_multiply)
+button_divide=Button(root, text="/", padx=30, pady=20, command=button_divide)
 
 
 #put buttons on screen
