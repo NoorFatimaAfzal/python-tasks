@@ -1,5 +1,7 @@
 from tkinter import *
 root=Tk()
+root.title("ECAT Test")
+
 mylabel=Label(root, text="Welcome to ECAT Test", font=("Arial", 20))
 
 def myclick():
