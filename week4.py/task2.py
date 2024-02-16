@@ -1,4 +1,4 @@
-n=int(input("enternumber of elements of list"))
+n=int(input("enter number of elements of list"))
 lst=[]
 for i in range(1,n+1):
     element=int(input("enter element"))
