@@ -1,16 +1,3 @@
-import tkinter as tk
-from tkinter import Label
-
-root.title("ECAT Test")
-root.minsize(400,400)
-Label(root, text="Welcome to ECAT Test", font=("Arial", 20)).pack()
-
-# Add your code here
-root.configure(background="light blue")
-root.mainloop()
-
-
-
 name=input("Enter your name: ")
 email=input("Enter your email: ")
 questions = [
