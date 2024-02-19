@@ -2,7 +2,6 @@ user_name=input("Enter your name: ")
 password=input("Enter your email: ")
 if user_name=="noor" or password=="butt":
     print("Welcome to ECAT test")
-        
     questions = [
     ["Qno.1\nWhich one is not a branch of physical sciences?\nA. chemistry\nB. astronomy\nC. geology\nD. biology"],
     ["Qno.2\nWhich branch of science plays an important role in the development of technology and engineering?\nA. chemistry\nB. physics\nC. geology\nD. biology"],
@@ -19,6 +18,7 @@ if user_name=="noor" or password=="butt":
     choices = ["select any option (A B C D)", "submit", "skip"]
     question_no = 0
     score = 0
+    skipped=0
     while question_no < len(questions):
         for question in questions[question_no:]:
             print(question[0])
@@ -27,24 +27,17 @@ if user_name=="noor" or password=="butt":
                 score += 1
             if choice == "SUBMIT":
                 print("Your score is:", score)
+                print("No of correct answers:", score)
+                print("No of skipped questions:", skipped)
                 if score>7:
                     print("Congratulations! You are eligible for admission🤩")
                 else:
                     print("Sorry! You are not eligible for admission😔")
                 quit()
             if choice == "SKIP":
+                skipped+=1
                 question_no += 1
                 break
-            question_no += 1
-            if question_no == len(questions):
-                print("Your score is:", score)
-                if score>7:
-                    print("Congratulations! You are eligible for admission🤩")
-                else:
-                    print("Sorry! You are not eligible for admission😔")
-                quit()
-        else:
-            break
 else:
     print("invalid user name or password! Please try again.") 
   
