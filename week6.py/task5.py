@@ -1,21 +1,29 @@
-# def invert(string,i):
-#     l=len(string)
-#     if l>0:
-#         print(string[l-1],end="")
-#         invert(string[l-1])
-# string=input("enter string: ")        
-# i=len(string)        
-# invert(string,i)
-
-def list_sum(num_List):
-    # Check if the length of the input list is 1
-    if len(num_List) == 1:
-        # If the list has only one element, return that element
-        return num_List[0]
+def reverse(string):
+    if string=="":
+        return""
     else:
-        # If the list has more than one element, return the sum of the first element
-        # and the result of recursively calling the list_sum function on the rest of the list
-        return num_List[0] + list_sum(num_List[1:])
+        return reverse(string[1:])+string[0]
+    
+print(reverse("jhsd"))   
 
-# Print the result of calling the list_sum function with the input [2, 4, 5, 6, 7]
-print(list_sum([2, 4, 5, 6, 7]))
+#palindrome
+
+def ispalandreom(string):
+    if len(string)==0 or len(string)==1:
+        return True
+    elif string[0]==string[len(string)-1]:
+        return ispalandreom(string[1:len(string)-1])
+    else:
+        return False
+    
+print(ispalandreom("racecar"))    
+        
+#decimal to binary
+def d_to_b(decimal,result):
+    if decimal==0:
+        return result
+    else:
+        result=str(decimal%2)+result
+        return d_to_b(decimal//2,result)
+
+print(d_to_b(17,""))            
