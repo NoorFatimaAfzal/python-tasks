@@ -26,4 +26,12 @@ def d_to_b(decimal,result):
         result=str(decimal%2)+result
         return d_to_b(decimal//2,result)
 
-print(d_to_b(17,""))            
+print(d_to_b(17,""))  
+
+#inverted
+def invert(string):
+    if string=="":
+        return ""
+    else:
+        return string[1:]+string[0]
+print(invert("jhv"))
