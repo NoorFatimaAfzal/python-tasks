@@ -10,3 +10,4 @@ def only(lst,l):
             new_lst.append(lst[i])
             return only(lst,l-1) 
 print(only(lst,l))
+
