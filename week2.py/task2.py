@@ -18,5 +18,3 @@ print(countS)
 countC=len(sentence)-(countV+countS)
 print(f"no of vowels={countV}")
 print(f"no of consonants={countC}")
-
-
