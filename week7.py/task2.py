@@ -21,7 +21,6 @@ matrix[1][0]=matrix[1][0]*-1
 print(f"the adjoint of given matrix is: ",matrix)
 
 # now im going to find adjoint og given matrix
-
 try:
     for i in range(len(matrix)):    
         for j in range(len(matrix[i])):  
