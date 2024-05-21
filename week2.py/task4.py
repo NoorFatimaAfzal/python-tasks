@@ -1,4 +1,5 @@
 import random
+
 upto=int(input("enter a number"))
 Capitals=input("do you want to have capital charactrs ? y/n")
 Small=input("do you want to have small charactrs ? y/n")
