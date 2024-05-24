@@ -1,6 +1,7 @@
 lowerRange = int(input("Lower value of the range: "))
 upperRange = int(input("Upper value of the range: "))
 PCount = 0
+
 sum=0
 
 div=2
